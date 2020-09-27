@@ -7,7 +7,7 @@ Because the Raspberry pi is not good at handling many read/write son its local f
 
 The serial process that takes the meter readings is blocking, so I made the server multi-threaded to make sure mutiple requests can be handled as quickly as possible.
 
-Most of the work to take the meter readsings is done by the excellent https://github.com/ndokter/dsmr_parser module.
+Most of the work to take the meter readings is done by the excellent https://github.com/ndokter/dsmr_parser module.
 
 takeOneReading.py is provided for testing. It takes one reading and prints the json to screen. Use it to test all is set up properly before startinmg the server.
 
