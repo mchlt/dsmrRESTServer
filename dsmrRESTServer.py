@@ -2,7 +2,7 @@
 # dsmr_rest-py - Starts a vert small multi-threaded web server that continuously reads 
 # current values from a DSMR (Dutch Smart Meter Requirements), or Slimme Meter, device 
 # and serves them in a REST json response.
-# The meter reasing is a blocking request, hence the reparate threads for handling
+# The meter reading is a blocking request, hence the separate threads for handling
 # the http requests.
 # requires dsmr_parser from ndokter: https://github.com/ndokter/dsmr_parser 
 
