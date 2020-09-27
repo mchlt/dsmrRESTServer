@@ -2,9 +2,22 @@
 # dsmr_rest-py - Starts a vert small multi-threaded web server that continuously reads 
 # current values from a DSMR (Dutch Smart Meter Requirements), or Slimme Meter, device 
 # and serves them in a REST json response.
-# The meter reading is a blocking request, hence the separate threads for handling
-# the http requests.
 # requires dsmr_parser from ndokter: https://github.com/ndokter/dsmr_parser 
+#
+#   Copyright (C) 2020 Michiel Tiller
+#
+#   This program is free software: you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation, either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 import json
 from re import sub
